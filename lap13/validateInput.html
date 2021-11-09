@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+	function checkUsername(){
+		var field = document.getElementById("username");
+	
+		if(field.value == null || field.value == '') {
+			alert("Invalid username");
+			return false;
+		} else {
+			alert("Valid username");
+			return true;
+		}
+	}
+
+	function checkEmail(){
+		var regex = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$");
+		
+		var field = document.getElementById("email");
+	
+		if(!regex.test(field.value)) {
+			alert("Invalid email");
+			return false;
+		} else {
+			alert("Valid email");
+			return true;
+		}
+	}
+	
+	function checkPhonenumber() {
+		var regex = new RegExp("(03|07|08|09|01[2|6|8|9])+([0-9]{8})");
+		var field = document.getElementById("telephone");
+	
+		if(!regex.test(field.value)) {
+			alert("Invalid phone number");
+			return false;
+		} else {
+			alert("Valid phone number");
+			return true;
+		}
+	
+	}
+</script>
+<h1>Validation Form</h1>
+<form id="myForm">
+	<input type="text" name="username" id="username" placeholder="Input your username"/>
+	<input type="button" value="Check username" onclick="checkUsername()"/></br>
+	<input type="text" name="email" id="email" placeholder="Input your email"/>
+	<input type="button" value="Check email" onclick="checkEmail()"/></br>
+	<input type="text" name="telephone" id="telephone" placeholder="Input your phone number"/>
+	<input type="button" value="Check phone number" onclick="checkPhonenumber()"/></br>
+</form>
+</body>
+</html><!DOCTYPE html>
+<html>
+<body>
+<script>
+	function checkUsername(){
+		var field = document.getElementById("username");
+	
+		if(field.value == null || field.value == '') {
+			alert("Invalid username");
+			return false;
+		} else {
+			alert("Valid username");
+			return true;
+		}
+	}
+
+	function checkEmail(){
+		var regex = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$");
+		
+		var field = document.getElementById("email");
+	
+		if(!regex.test(field.value)) {
+			alert("Invalid email");
+			return false;
+		} else {
+			alert("Valid email");
+			return true;
+		}
+	}
+	
+	function checkPhonenumber() {
+		var regex = new RegExp("(03|07|08|09|01[2|6|8|9])+([0-9]{8})");
+		var field = document.getElementById("telephone");
+	
+		if(!regex.test(field.value)) {
+			alert("Invalid phone number");
+			return false;
+		} else {
+			alert("Valid phone number");
+			return true;
+		}
+	
+	}
+</script>
+<h1>Validation Form</h1>
+<form id="myForm">
+	<input type="text" name="username" id="username" placeholder="Input your username"/>
+	<input type="button" value="Check username" onclick="checkUsername()"/></br>
+	<input type="text" name="email" id="email" placeholder="Input your email"/>
+	<input type="button" value="Check email" onclick="checkEmail()"/></br>
+	<input type="text" name="telephone" id="telephone" placeholder="Input your phone number"/>
+	<input type="button" value="Check phone number" onclick="checkPhonenumber()"/></br>
+</form>
+</body>
+</html>

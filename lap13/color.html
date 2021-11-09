@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #param * {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      function changeColor(color) {
+        document.getElementById("param").style.color = color;
+        console.log("change");
+      }
+      function mouseOut() {
+        document.getElementById("param").style.color = "black";
+        console.log("out");
+      }
+    </script>
+    <h2 onmouseover="changeColor('red')" onmouseout="mouseOut()">Red</h2>
+    <h2 onmouseover="changeColor('green')" onmouseout="mouseOut()">Green</h2>
+    <h2 onmouseover="changeColor('blue')" onmouseout="mouseOut()">Blue</h2>
+    <p id="param">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+      debitis amet possimus quia doloremque cupiditate pariatur dolor vel,
+      perferendis autem.
+    </p>
+  </body>
+</html>
